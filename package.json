@@ -1,0 +1,18 @@
+{
+  "name": "js-crud-sql-server",
+  "version": "1.0.0",
+  "description": "NodeJS CRUD with Microsoft SQL Server",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js"
+  },
+  "author": "Rahmad Alamsyah Nazaruddin",
+  "license": "ISC",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.19.2",
+    "sequelize": "^6.37.3",
+    "tedious": "^18.3.0"
+  }
+}
