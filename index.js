@@ -2,6 +2,7 @@ const express = require("express");
 const cors = require("cors");
 
 const app = express();
+require("dotenv").config();
 
 const db = require("./app/models");
 db.sequelize.sync();
@@ -24,7 +25,7 @@ app.use(express.urlencoded({ extended: true }));
 
 // simple route
 app.get("/", (req, res) => {
-    res.json({ message: "Welcome to bezkoder application." });
+    res.json({ message: "Hi, How Are You!." });
 });
 
 require("./app/routes/turorial.routes")(app);

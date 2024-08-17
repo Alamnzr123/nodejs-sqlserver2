@@ -1,9 +1,9 @@
 module.exports = {
-    HOST: "ALAMSYAH",
-    PORT: "1433",
-    USER: "alamnzr",
-    PASSWORD: "sas",
-    DB: "test-app",
+    HOST: process.env.HOST,
+    PORT: process.env.PORT_DB,
+    USER: process.env.USER_DB,
+    PASSWORD: process.env.PASSWORD_DB,
+    DB: process.env.DB,
     dialect: "mssql",
     pool: {
         max: 5,
